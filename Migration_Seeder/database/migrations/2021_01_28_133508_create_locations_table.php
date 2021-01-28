@@ -18,7 +18,6 @@ class CreateLocationsTable extends Migration
             $table->string('name', 60);
             $table->string('street', 80);
             $table->integer('numberOfEmplooyees')->unsigned();
-            $table->id();
             $table->timestamps();
         });
     }
