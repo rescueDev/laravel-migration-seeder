@@ -1,7 +1,72 @@
+header {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: lightgreen;
+}
+
+.brands-container {
+  min-height: 400px;
+  width: 100%;
+  padding: 16px;
+  background-color: lightseagreen;
+}
+
+.brands-container li {
+  margin: 10px auto;
+}
+
+.brands-container li a {
+  color: white;
+}
+
+.home-container {
+  min-height: 400px;
+  background-color: slategray;
+}
+
+.employees-container {
+  min-height: 400px;
+  width: 100%;
+  padding: 16px;
+  background-color: slateblue;
+}
+
+.employees-container li {
+  margin: 10px auto;
+}
+
+.employees-container li a {
+  color: white;
+}
+
+.locations-container {
+  min-height: 400px;
+  padding: 16px;
+  width: 100%;
+  background-color: maroon;
+}
+
+.locations-container li {
+  margin: 10px auto;
+}
+
+.locations-container li a {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: coral;
   color: white;
   text-align: center;
+  min-height: 100vh;
 }
 
 li {
@@ -10,5 +75,14 @@ li {
 
 a {
   color: black;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: darkgrey;
 }
 

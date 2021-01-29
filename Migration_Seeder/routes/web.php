@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', 'HomeController@home')->name('home');
+
 //creo rotta per funzione index nel controller Employee
 Route::get('/employees', 'EmployeeController@index')->name('employees');
 

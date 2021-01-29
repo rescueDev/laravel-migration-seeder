@@ -1,8 +1,23 @@
 //
+@import "./Profiles/common";
+@import "./Profiles/header";
+@import "./Profiles/footer";
+@import "./Profiles/brand-container";
+@import "./Profiles/home-container";
+@import "./Profiles/employees-container";
+@import "./Profiles/locations-container";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: coral;
     color: white;
     text-align: center;
+    min-height: 100vh;
 }
 
 li {
@@ -11,4 +26,13 @@ li {
 
 a {
     color: black;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: darkgrey;
 }

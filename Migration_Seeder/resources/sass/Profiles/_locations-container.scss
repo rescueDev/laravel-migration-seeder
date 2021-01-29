@@ -1,0 +1,12 @@
+.locations-container {
+    min-height: 400px;
+    padding: 16px;
+    width: 100%;
+    background-color: maroon;
+    li {
+        margin: 10px auto;
+        a {
+            color: white;
+        }
+    }
+}

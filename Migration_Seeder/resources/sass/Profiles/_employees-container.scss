@@ -1,0 +1,12 @@
+.employees-container {
+    min-height: 400px;
+    width: 100%;
+    padding: 16px;
+    background-color: slateblue;
+    li {
+        margin: 10px auto;
+        a {
+            color: white;
+        }
+    }
+}
