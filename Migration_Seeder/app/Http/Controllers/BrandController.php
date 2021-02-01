@@ -18,4 +18,21 @@ class BrandController extends Controller
         $brand = Brand::findOrFail($id);
         return view('pages.brand', compact('brand'));
     }
+    public function create()
+    {
+        return view('pages.create-brand');
+    }
+    public function store(Request $request)
+    {
+
+        //dd($request->all());
+        $newBrand = new Brand;
+        $newBrand->name = $request->get('name');
+        $newBrand->logo = $request->get('logo');
+        $newBrand->numberOfLocations = $request->get('numberOfLocations');
+
+        $newBrand->save();
+
+        return redirect()->route('brands');
+    }
 }

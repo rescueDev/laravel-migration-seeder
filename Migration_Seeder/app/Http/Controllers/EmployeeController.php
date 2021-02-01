@@ -19,4 +19,18 @@ class EmployeeController extends Controller
         $employee = Employee::findOrFail($id);
         return view('pages.employee', compact('employee'));
     }
+    public function create()
+    {
+        return view('pages.create-employee');
+    }
+    public function store(Request $request)
+    {
+        // dd($request->all());
+        // $newEmployee = new Employee;
+        // $newEmployee->name = $request->get('');
+        // $newEmployee->lastname = $request->get();
+        // $newEmployee->hireDate = $request->get();
+        Employee::create($request->all());
+        return redirect()->route('employees');
+    }
 }

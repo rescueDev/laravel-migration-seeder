@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="brands-container">
+        <a href="{{ route('brand-create') }}">Create new Brand</a>
         @foreach ($brands as $brand)
             <ul>
                 <li>

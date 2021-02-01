@@ -2,6 +2,7 @@
 @section('content')
     <div class="employees-container">
 
+        <a href="{{ route('employee-create') }}">Create New Employee</a>
 
         @foreach ($employees as $employee)
             <ul>

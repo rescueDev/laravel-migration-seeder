@@ -23,3 +23,18 @@ Route::get('/locations', 'LocationController@index')->name('locations');
 
 //creo rotta per funzione index nel controller Location
 Route::get('/location/{id}', 'LocationController@show')->name('show-location');
+
+
+
+//creo rotta per creare un nuovo brand con funzione create nel controller Brand
+Route::get('/new/brand', 'BrandController@create')->name('brand-create');
+
+//creo rotta con il metodo post del submit del form 
+Route::post('/new/brand/store', 'BrandController@store')->name('brand-store');
+
+
+//creo rotta per creare un nuovo employee con funzione create nel controller Employee
+Route::get('/new/employee', 'EmployeeController@create')->name('employee-create');
+
+//creo rotta con il metodo post del submit del form 
+Route::post('/new/employee/store', 'EmployeeController@store')->name('employee-store');
